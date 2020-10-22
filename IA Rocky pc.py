@@ -295,7 +295,7 @@ else:
 os.system('cls')
 print(f"{nombre} cuantos años tienes?")
 edad=int(input())
-if edad < 10:
+if edad <= 10:
   print(f"{nombre} eres aun muy joven")
 elif edad >= 10 and edad < 18:
   print(f"{nombre} ah vale, eres aun un poco joven, ademas es bueno que aprendas programación desde esta edad.")
@@ -305,7 +305,7 @@ elif edad >= 10 and edad < 18:
   input(f"Presiona una tecla para continuar {nombre}...")
   print("Interesante no?, pero bueno sigamos.")
   time.sleep(1)
-elif edad > 18:
+elif edad >= 18:
   print("Increible que a pesar de tu edad y quizas labores que te ocupen intentes aprender sobre programación.")
   time.sleep(2)
   print("Me parece muy bien", nombre,"!" )
