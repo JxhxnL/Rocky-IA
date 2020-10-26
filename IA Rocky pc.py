@@ -372,4 +372,4 @@ elif ar_año == "No" or ar_año == "no" or ar_año == "NO":
     elif apagar == "No" or apagar == "NO" or apagar == "no":
       print(f"Bueno mi {nombre}, sigamos entonces.")
 
-#1.4 Se realizara jueves 22 de octubre con estudiantes del grado 9B - LNH
+#1.4 Se realizara jueves 29 de octubre con estudiantes del grado 9B - LNH
