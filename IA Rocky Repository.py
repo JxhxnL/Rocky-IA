@@ -253,7 +253,7 @@ if Rocky == "si" or Rocky == "Si" or Rocky == "SI":
         os.system('cls')
         a=1 
     elif rta1 == 5:
-      print(Fore.BLUE + "Rocky fue diseñado por alrededor de 5 estudiantes de la institución Liceo Nuevos Horizontes ubicado en Bogota - Colombia, ademas hasta el momento cuenta con mas de 200 lineas de codigo. ")
+      print(Fore.BLUE + "Rocky fue diseñado por los estudiantes del grado 9B de la institución Liceo Nuevos Horizontes ubicado en Bogota - Colombia en el año 2020, ademas hasta el momento cuenta con mas de 400 lineas de codigo. ")
       time.sleep(7.5)
       input(f"Presiona una tecla para continuar {nombre}...")
       os.system('cls')
