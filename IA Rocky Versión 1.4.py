@@ -248,6 +248,7 @@ def despedida():
   time.sleep(1)
   print("")
   print(Fore.YELLOW + f"A continuación me encantaria recopilar unos datos tuyos. Regalame un segundo. ")
+  print("")
   print(Fore.GREEN + "Cargando")
   time.sleep(1)
   print(Fore.GREEN + ".")
@@ -262,6 +263,15 @@ def despedida():
   time.sleep(0.50)
   print(Fore.GREEN + ".")
   print("")
+  input(Fore.GREEN + "Presiona la tecla Enter para cerrar el programa y dirigite a la carpeta donde tienes guardado Rocky y revisa el archivo de texto Datos")
+
+  file = open("datos.txt", "w")
+  file.write("| --- --- DATOS DE INTERVENCIÓN - Rocky 1.5 --- --- |")
+  file.write(f"Nombre: {nombre}" + os.linesep)
+  file.write(f"Genero: {genero}" + os.linesep)
+  file.write(f"Edad: {edad}" + os.linesep)
+  file.write(f"Estudia: {estudio}" + os.linesep)
+  file.close()
 
 def captcha1(data):
   capcha=int(input("¿Qué año es?\n"))
@@ -363,6 +373,7 @@ def run(data):
 #variables
 a=1
 b=1
+c=1
 
 init(autoreset=True)
 print(Fore.GREEN +"¡Hola!")
@@ -526,13 +537,28 @@ elif edad >= 10 and edad <= 17:
   print("")
   time.sleep(7)
   input(f"Presiona una tecla para continuar {nombre}...")
-  print("Interesante no?, pero bueno sigamos.")
-  time.sleep(1)
 elif edad >= 18:
   print("Increible que a pesar de tu edad y quizas labores que te ocupen intentes aprender sobre programación.")
   time.sleep(2)
   print("Me parece muy bien", nombre,"!" )
   time.sleep(3)
+while c == 1:
+  genero=input(f"¿{nombre}, eres hombre o mujer? \n")
+  if genero == "Mujer" or genero == "MUJER" or genero == "mujer" or genero == "MUjer" or genero == "mujER" or genero == "MUJEr":
+    print("Increible eres una mujer... :)")
+    time.sleep(1)
+    print("Tengo que ser un poco más caballeroso.")
+    time.sleep(4)
+    break
+  elif genero == "Hombre" or genero == "hombre" or genero == "HOMBRE" or genero == "HOMbre" or genero == "homBRE" or genero == "HOMBRe":
+    print("Eres un hombre increible, tendre que ser un poco mas rudo a la hora de hablar contigo. >:I")
+    time.sleep(2)
+    print(f"Es broma {nombre}, no te preocupes jajaja.") 
+    time.sleep(4)
+    break
+  else:
+    print("No entendi tu respuesta.")
+    c=1
 time.sleep(2)
 os.system('cls')
 print("Rocky necesita saber unos datos tuyos, empecemos.")
@@ -547,7 +573,7 @@ while b == 1:
     print("Oh vale, increible.")
     time.sleep(0.5)
     print("Y entonces, ¿de que país eres?")
-    país=input("")
+    pais=input("")
     os.system('cls')
     break
   else:
