@@ -1,7 +1,8 @@
 # Rocky-IA
 Asistente en Python para la enseñanza de Arduino.
-Dicho Software esta siendo aún desarrollado  por  5 estudiantes del grado 9B del Liceo Nuevos Horizontes ubicado en la ciudad de Bogotá - Colombia.
-Cabe aclara que dicho codigo se encuentra en etapas intermedias de desarrollo ya que se busca irlo mejorando poco a poco despues de la versión 1.5.
+Dicho Software se encuentra en Break desarrollado para la investigación titulada "Python: Una herramienta para desarrollar el Razonamiento Logico Matematico en el cerebro" proyecto desarrollado en la instituación Liceo Nuevos Horizontes ubicada en la ciudad de Bogotá - Colombia.
+
+Cabe aclarar que dicho codigo se encuentra en etapas intermedias de desarrollo ya que se busca desarrollar una IA en todo el sentido de la palabra.
 
 ATT: Johan León
 Investigador Rocky IA
